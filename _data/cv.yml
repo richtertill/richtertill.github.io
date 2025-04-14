@@ -1,97 +1,175 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+{
+  "basics": {
+    "name": "Till Richter",
+    "label": "Ph.D. Student in Machine Learning",
+    "image": "",
+    "email": "till-richter@gmx.de",
+    "phone": "+49 172 9605127",
+    "url": "https://linkedin.com/in/till-richter",
+    "summary": "Ph.D. student at TUM focusing on self-supervised learning, generative models, and dynamical modeling in single-cell genomics.",
+    "location": {
+      "address": "Munich, Germany",
+      "postalCode": "",
+      "city": "Munich",
+      "countryCode": "DE",
+      "region": "Bavaria"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "richtertill",
+        "url": "https://github.com/richtertill"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Technical University of Munich (TUM), Helmholtz Munich",
+      "position": "Ph.D. Student in Machine Learning",
+      "url": "https://www.helmholtz-munich.de",
+      "startDate": "2021-09-01",
+      "summary": "Collaboration: Contribute to the Causal Cell Dynamics international lab (Helmholtz Munich, MILA Montreal). Develop methods for causally structured deep representation learning to improve our understanding of cellular decisions.",
+      "highlights": [
+        "Self-Supervised Learning and Foundation Models",
+        "Generative Models and Flow Matching",
+        "Neural Differential Equations",
+        "Co-Organizer Learning Meaningful Representations of Life (LMRL) Workshop at ICLR 2025 (Singapore)",
+        "Co-Organizer Explainable ML Workshop at ECCB 2024 (Finland)",
+        "Talk at Helmholtz AI 2024 (Germany)",
+        "Poster at NeurIPS 2022 (USA)",
+        "Attended Oxford ML Summer School 2022 (UK), Advanced Course on Data Science and ML 2022 (Italy)",
+        "Teaching MSc-level: Statistical Learning (SS24), Deep Learning Seminar (WS21-WS24, Organizer since WS24)",
+        "Teaching BSc-level: Analysis for Informatics (WS23-WS24)",
+        "Supervision of interns, working- and thesis students"
+      ]
+    },
+    {
+      "name": "Data Analytics and Machine Learning Group, Technical University of Munich (TUM)",
+      "position": "Tutor",
+      "highlights": [
+        "Assisted in teaching Machine Learning and Machine Learning for Graphs and Sequential Data",
+        "Provided programming support and evaluated student projects and exams"
+      ],
+      "startDate": "2020-04-01",
+      "endDate": "2021-03-31"
+    },
+    {
+      "name": "UnternehmerTUM GmbH",
+      "position": "Manage&More Scholar",
+      "highlights": [
+        "Led a MedTech innovation project at Heller GmbH, developing a novel business model",
+        "Student consultant for a design thinking project at LOEWI GmbH in medical nutrition, resulting in new sales strategies"
+      ],
+      "startDate": "2019-10-01",
+      "endDate": "2021-02-28"
+    },
+    {
+      "name": "BMW Group",
+      "position": "Working Student",
+      "highlights": [
+        "Developed data visualization tools for autonomous vehicles and automation scripts using VBA"
+      ],
+      "startDate": "2019-05-01",
+      "endDate": "2019-09-30"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "KI macht Schule!",
+      "location": "Munich, Germany",
+      "position": "Volunteer",
+      "startDate": "2023-09-01",
+      "summary": "Hold workshops for high-school students on artificial intelligence."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Technical University of Munich (TUM)",
+      "location": "Munich, Germany",
+      "area": "Machine Learning",
+      "studyType": "Ph.D.",
+      "startDate": "2021-09-01",
+      "endDate": "2025-12-01",
+      "summary": "Advised by Fabian Theis, Niki Kilbertus, Yoshua Bengio. Self-Supervised Machine Learning in Single-Cell Genomics. Member of Munich School for Data Science (MUDS), Munich Center for Machine Learning (MCML), HELENA."
+    },
+    {
+      "institution": "Technical University of Munich (TUM)",
+      "location": "Munich, Germany",
+      "area": "Robotics, Cognition, Intelligence",
+      "studyType": "M.Sc.",
+      "startDate": "2018-09-01",
+      "endDate": "2021-08-01",
+      "score": "1.6 / 1.0 scale",
+      "summary": "Relevant coursework: Machine Learning, Deep Learning, Artificial Intelligence, Robotics."
+    },
+    {
+      "institution": "Leibniz Universität Hannover",
+      "location": "Hannover, Germany",
+      "area": "Engineering and Business Administration",
+      "studyType": "B.Sc.",
+      "startDate": "2014-09-01",
+      "endDate": "2018-09-01",
+      "score": "2.1 / 1.0 scale",
+      "summary": "Relevant coursework: Mathematics, Control Technology, Informatics."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Generating Multi-Modal and Multi-Attribute Single-Cell Counts with CFGen",
+      "summary": "Generative model based on Flow Matching to generate single-cell count data.",
+      "url": "https://openreview.net/forum?id=3MnMGLctKb"
+    },
+    {
+      "name": "Delineating the Effective Use of Self-Supervised Learning in Single-Cell Genomics",
+      "summary": "Adapt and develop self-supervised learning methods for single-cell RNA-sequencing data.",
+      "url": "https://www.nature.com/articles/s42256-024-00934-3"
+    },
+    {
+      "name": "Generative Models of Cell Dynamics: From Neural ODEs to Flow Matching",
+      "summary": "Primer on modeling single-cell dynamics with neural differential equations.",
+    },
+    {
+      "name": "SpatialSSL: Whole-Brain Spatial Transcriptomics in the Mouse Brain with Self-Supervised Learning",
+      "summary": "Improve cell type prediction performance on a large-scale spatial transcriptomics dataset with self-supervised learning.",
+      "url": "https://openreview.net/pdf?id=bfD3Fzy7Mb"
+    },
+    {
+      "name": "Heterogeneity-driven phenotypic plasticity and treatment response in branched-organoid models of pancreatic ductal adenocarcinoma",
+      "summary": "Contributed single-cell RNA-sequencing data analysis to a collaborative project with clinical partners.",
+      "url": "https://www.nature.com/articles/s41551-024-01273-9"
+    },
+    {
+      "name": "Sparsity in Continuous-Depth Neural Networks",
+      "summary": "Improve explainability in Neural ODEs for single-cell RNA-sequencing data through novel regularization scheme.",
+      "url": "https://arxiv.org/abs/2210.14672"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Python (advanced)", "R (basic)"]
+    },
+    {
+      "name": "Machine Learning and Data Science Tools",
+      "keywords": ["PyTorch", "Lightning", "Hydra", "Numpy", "Scanpy", "Pandas"]
+    },
+    {
+      "name": "Workflow Management",
+      "keywords": ["SLURM", "Agile methods"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "German",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Conversational"
+    }
+  ]
+}
