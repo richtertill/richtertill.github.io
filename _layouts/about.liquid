@@ -48,7 +48,6 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts == true %}
       <h2>
@@ -57,7 +56,6 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-
     <!-- Selected papers -->
     {% if page.selected_papers and page.selected_papers == true %}
       <h2>
@@ -65,7 +63,6 @@ layout: default
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
-
 
     <!-- Social -->
     {% if page.social %}
