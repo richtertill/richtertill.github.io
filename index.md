@@ -6,7 +6,7 @@ subtitle: Ph.D. Student in Machine Learning for Computational Biology
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Till_lab_min.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Technical University of Munich</p>
