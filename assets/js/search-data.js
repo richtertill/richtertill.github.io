@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-",
-    title: "",
+    id: "nav-about",
+    title: "about",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -52,7 +52,27 @@ ninja.data = [{
           window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
         
       },
-    },{
+    },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather.html";
+            },},{id: "news-globewith-meridians-the-learning-meaningful-representations-of-life-lmrl-workshop-i-co-organize-got-accepted-at-iclr-2025-link",
+          title: ':globewith_meridians: The _Learning Meaningful Representations of Life (LMRL) Workshop I co-organize got accepted...',
+          description: "",
+          section: "News",},{id: "news-pagefacing-up-our-collaborative-paper-heterogeneity-driven-phenotypic-plasticity-and-treatment-response-in-branched-organoid-models-of-pancreatic-ductal-adenocarcinoma-has-been-published-in-nature-biomedical-engineering-link",
+          title: ':pagefacing_up: Our collaborative paper _Heterogeneity-driven phenotypic plasticity and treatment response in branched-organoid models...',
+          description: "",
+          section: "News",},{id: "news-rocket-excited-to-share-that-i-will-be-joining-microsoft-research-in-cambridge-ma-working-with-lorin-crawford-as-a-research-intern-from-may-to-august-2025-å",
+          title: ':rocket: Excited to share that I will be joining Microsoft Research in Cambridge,...',
+          description: "",
+          section: "News",},{id: "news-pagefacing-up-our-paper-delineating-the-effective-use-of-self-supervised-learning-in-single-cell-genomics-is-now-published-in-nature-machine-intelligence-link",
+          title: ':pagefacing_up: Our paper _Delineating the Effective Use of Self-Supervised Learning in Single-Cell Genomics...',
+          description: "",
+          section: "News",},{id: "news-pagefacing-up-cfgen-generating-multi-modal-and-multi-attribute-single-cell-counts-has-been-accepted-at-iclr-2025-link",
+          title: ':pagefacing_up: _CFGen: Generating Multi-Modal and Multi-Attribute Single-Cell Counts has been accepted at ICLR...',
+          description: "",
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
