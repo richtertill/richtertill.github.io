@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Till
-middle_name: 
+middle_name:
 last_name: Richter
 contact_note: >
   Best way to reach me is via email.
@@ -72,7 +72,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
 
-# For Google Analytics, see 
+# For Google Analytics, see
 # and follow the instructions for Google Sites. You will need to create a
 google_analytics: # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
@@ -101,7 +101,7 @@ related_blog_posts:
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
-# Follow instructions on https://giscus.app/ to setup for your repo to fill out 
+# Follow instructions on https://giscus.app/ to setup for your repo to fill out
 giscus:
   repo: # <your-github-user-name>/<your-github-repo-name>
   repo_id: # leave empty or specify your repo_id (see https://giscus.app/)
@@ -110,7 +110,7 @@ giscus:
   mapping: title # identify discussions by post title
   strict: 1 # use strict identification mode
   reactions_enabled: 1 # enable (1) or disable (0) emoji reactions
-  input_position: bottom # whether to display input form below (bottom) or 
+  input_position: bottom # whether to display input form below (bottom) or
   theme: preferred_color_scheme # name of the color scheme (preferred works
   emit_metadata: 0
   lang: en
@@ -196,7 +196,7 @@ exclude:
   - _posts/
   - _projects/?_project.md
   - _pages/books.md
-  
+
   - assets/jupyter/blog.ipynb
 keep_files:
   - CNAME
@@ -204,7 +204,6 @@ keep_files:
 
 # Plug-ins
 plugins:
-  # - jekyll-archives-v2
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -237,7 +236,7 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
-  compress_javascript: false # set to false since we are using terser as the js 
+  compress_javascript: false # set to false since we are using terser as the js
   exclude: ["robots.txt", "assets/js/search/*.js"]
 
 # -----------------------------------------------------------------------------
@@ -263,8 +262,8 @@ terser:
 #   books:
 #     enabled: [year, tags, categories]
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] 
-display_categories: ["external-services"] # these categories will 
+display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"]
+display_categories: ["external-services"] # these categories will
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
