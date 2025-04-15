@@ -10,6 +10,7 @@ nav_order: 6
 ### Graduate Level
 
 - **Statistical Learning** (SS24)
+
   - Master's course focusing on fundamental concepts and modern applications of statistical learning methods
 
 - **Deep Learning Seminar** (WS21-WS24)
