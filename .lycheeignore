@@ -1,2 +1,7 @@
 linkedin.com
 reddit.com
+# Cloudflare bot blocks return 403 to lychee even when the URL is correct.
+sciencedirect.com
+biorxiv.org
+# Helmholtz Munich's WAF intermittently blocks non-browser user-agents.
+helmholtz-munich.de
