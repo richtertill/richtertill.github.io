@@ -9,14 +9,25 @@ last_name: Richter
 contact_note: >
   Best way to reach me is via email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Based on [*folio](https://github.com/bogoli/-folio) design.
+  Till Richter is a Ph.D. researcher at the Technical University of Munich (TUM) and Helmholtz Munich
+  working on self-supervised learning, compositional multimodal foundation models, and generative dynamics
+  for single-cell and spatial omics. Advised by Fabian Theis, Niki Kilbertus, and Yoshua Bengio.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: machine learning, computational biology
+keywords: >
+  Till Richter, Till Richter TUM, Till Richter Helmholtz, Till Richter machine learning,
+  self-supervised learning, SSL single cell, single-cell genomics, foundation models for biology,
+  virtual cell, multimodal foundation models, compositional foundation models, neural ODEs,
+  flow matching, generative models, spatial transcriptomics, computational biology,
+  Technical University of Munich, Helmholtz Munich, MUDS, MCML, MDSI, Fabian Theis, Niki Kilbertus, Yoshua Bengio
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: logo.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+
+# Person-level metadata used in Open Graph + Schema.org (improves Google "Till Richter" ranking)
+job_title: Ph.D. Researcher in Machine Learning for Computational Biology
+affiliation: Technical University of Munich (TUM), Helmholtz Munich
+affiliation_url: https://www.helmholtz-munich.de/en/icb
 
 url: https://richtertill.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -32,7 +43,8 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false # disabled: the auto-generated stats card looked noisy; the
+  # repositories page now focuses on featured code projects only.
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -66,7 +78,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+og_image: /assets/img/Till_lab_min.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

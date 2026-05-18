@@ -121,6 +121,14 @@ html[data-theme="dark"] {
   .only-dark {
     display: block;
   }
+
+  .navbar-logo {
+    // Invert the logo so its white background becomes black and blends into
+    // the dark page background; the tan TR mark becomes a soft cyan, in line
+    // with the dark theme accent color.
+    mix-blend-mode: screen;
+    filter: invert(1) hue-rotate(180deg);
+  }
 }
 
 html[data-theme-setting="dark"] {

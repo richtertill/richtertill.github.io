@@ -287,6 +287,17 @@ ul.task-list input[type="checkbox"] {
     color: var(--global-text-color);
   }
 
+  .navbar-logo {
+    height: 1.6em;
+    width: auto;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    // The logo PNG has a white background; multiply blends it into the white
+    // page background of light mode. In dark mode we invert the image so the
+    // (now black) background blends into the dark page background instead.
+    mix-blend-mode: multiply;
+  }
+
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
 

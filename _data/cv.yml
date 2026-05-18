@@ -2,12 +2,12 @@
   "basics":
     {
       "name": "Till Richter",
-      "label": "Ph.D. Student in Machine Learning",
+      "label": "Ph.D. Researcher in Machine Learning for Computational Biology",
       "image": "",
       "email": "till-richter@gmx.de",
       "phone": "+49 172 9605127",
       "url": "https://linkedin.com/in/till-richter",
-      "summary": "Ph.D. student at TUM focusing on self-supervised learning, generative models, and dynamical modeling in single-cell genomics.",
+      "summary": "Ph.D. researcher at TUM and Helmholtz Munich focusing on self-supervised learning, multimodal foundation models, and generative dynamics for single-cell and spatial omics. Advised by Fabian Theis, Niki Kilbertus, and Yoshua Bengio.",
       "location": { "address": "Munich, Germany", "postalCode": "", "city": "Munich", "countryCode": "DE", "region": "Bavaria" },
       "profiles": [{ "network": "GitHub", "username": "richtertill", "url": "https://github.com/richtertill" }],
     },
@@ -15,24 +15,39 @@
     [
       {
         "name": "Technical University of Munich (TUM), Helmholtz Munich",
-        "position": "Ph.D. Student in Machine Learning",
+        "position": "Ph.D. Researcher in Machine Learning",
         "url": "https://www.helmholtz-munich.de",
         "startDate": "2021-09-01",
-        "summary": "Collaboration: Contribute to the Causal Cell Dynamics international lab (Helmholtz Munich, MILA Montreal). Develop methods for causally structured deep representation learning to improve our understanding of cellular decisions.",
+        "summary": "Contribute to the Causal Cell Dynamics international lab (Helmholtz Munich, MILA Montreal). Develop self-supervised, multimodal, and dynamical methods to learn meaningful representations of cellular biology.",
         "highlights":
           [
-            "Self-Supervised Learning and Foundation Models",
-            "Generative Models and Flow Matching",
-            "Neural Differential Equations",
+            "Self-Supervised Learning and Foundation Models for Single-Cell and Spatial Omics",
+            "Compositional Multimodal Foundation Models (Synergistic Information Score, CFMs)",
+            "Generative Models, Neural ODEs, and Flow Matching for Cellular Dynamics",
+            "Co-Organizer Learning Meaningful Representations of Life (LMRL) Workshop at ICLR 2026 (Rio de Janeiro)",
             "Co-Organizer Learning Meaningful Representations of Life (LMRL) Workshop at ICLR 2025 (Singapore)",
-            "Co-Organizer Explainable ML Workshop at ECCB 2024 (Finland)",
+            "Co-Organizer Explainable ML in Bioinformatics Workshop at ECCB 2024 (Finland)",
             "Talk at Helmholtz AI 2024 (Germany)",
             "Poster at NeurIPS 2022 (USA)",
             "Attended Oxford ML Summer School 2022 (UK), Advanced Course on Data Science and ML 2022 (Italy)",
-            "Teaching MSc-level: Statistical Learning (SS24), Deep Learning Seminar (WS21-WS24, Organizer since WS24)",
-            "Teaching BSc-level: Analysis for Informatics (WS23-WS24)",
+            "Teaching MSc-level: Statistical Learning (SS24, WS25), Deep Learning Seminar (WS21-SS26, Organizer since WS24)",
+            "Teaching BSc-level: Analysis for Informatics (WS23, WS24)",
             "Supervision of interns, working- and thesis students",
           ],
+      },
+      {
+        "name": "Microsoft Research, Cambridge, MA",
+        "position": "Research Intern",
+        "url": "https://www.microsoft.com/en-us/research/group/biomedical-ml/",
+        "summary": "Worked with Lorin Crawford, Ava Amini and the AI for Biomedicine team on multimodal cell foundation models. Introduced the Synergistic Information Score (SIS), a partial-information-decomposition metric for measuring synergistic vs. redundant information in compositional multimodal models for spatial transcriptomics.",
+        "highlights":
+          [
+            "Introduced the Synergistic Information Score (SIS) for multimodal cell foundation models",
+            "Theoretical and empirical analysis of alignment vs. synergistic integration objectives",
+            "Resulted in the preprint 'Beyond alignment: synergistic integration is required for multimodal cell foundation models' (bioRxiv, 2026)",
+          ],
+        "startDate": "2025-05-12",
+        "endDate": "2025-08-31",
       },
       {
         "name": "Data Analytics and Machine Learning Group, Technical University of Munich (TUM)",
@@ -82,8 +97,8 @@
         "area": "Machine Learning",
         "studyType": "Ph.D.",
         "startDate": "2021-09-01",
-        "endDate": "2025-12-01",
-        "summary": "Advised by Fabian Theis, Niki Kilbertus, Yoshua Bengio. Self-Supervised Machine Learning in Single-Cell Genomics. Member of Munich School for Data Science (MUDS), Munich Center for Machine Learning (MCML), HELENA.",
+        "endDate": "2026-12-01",
+        "summary": "Advised by Fabian Theis, Niki Kilbertus, Yoshua Bengio. Thesis: Structured Self-Supervised Learning for Cell Biology - from static representations to multimodal foundation models and cellular dynamics. Member of MUDS, MCML, MDSI, and HELENA.",
       },
       {
         "institution": "Technical University of Munich (TUM)",
@@ -109,32 +124,48 @@
   "projects":
     [
       {
+        "name": "Beyond alignment: synergistic integration is required for multimodal cell foundation models",
+        "summary": "Introduced the Synergistic Information Score (SIS), a partial information decomposition metric quantifying nonlinear synergy between modalities, and benchmarked ten fusion methods on spatial transcriptomics. bioRxiv, 2026.",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.02.23.707420v3",
+      },
+      {
+        "name": "From modality-specific to compositional foundation models for cell biology",
+        "summary": "Perspective in Cell Systems on compositional foundation models that fuse pre-trained unimodal experts via learned interfaces, as a scalable path toward virtual cell models.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2405471226000165",
+      },
+      {
+        "name": "Generative models of cell dynamics: from Neural ODEs to flow matching",
+        "summary": "Review in Communications Biology unifying neural differential equations, simulation-free flow matching, and generative trajectory inference for single-cell omics.",
+        "url": "https://www.nature.com/articles/s42003-026-09758-w",
+      },
+      {
+        "name": "Language may be all omics needs: CellHermes",
+        "summary": "Multimodal omics foundation model built on a pre-trained LLM via LoRA fine-tuning. Reformulates omics tasks into question-answer pairs to unify encoding, prediction, and explanation. bioRxiv, 2025.",
+        "url": "https://www.biorxiv.org/content/10.1101/2025.11.07.687322",
+      },
+      {
         "name": "Generating Multi-Modal and Multi-Attribute Single-Cell Counts with CFGen",
-        "summary": "Generative model based on Flow Matching to generate single-cell count data.",
-        "url": "https://openreview.net/forum?id=3MnMGLctKb",
+        "summary": "Generative model based on Flow Matching to generate multi-modal and multi-attribute single-cell count data. ICLR, 2025.",
+        "url": "https://arxiv.org/abs/2407.11734",
       },
       {
         "name": "Delineating the Effective Use of Self-Supervised Learning in Single-Cell Genomics",
-        "summary": "Adapt and develop self-supervised learning methods for single-cell RNA-sequencing data.",
+        "summary": "Systematic study of when and why SSL helps in single-cell genomics, with masked-prediction objectives transferring best across donors, tissues, and technologies. Nature Machine Intelligence, 2024.",
         "url": "https://www.nature.com/articles/s42256-024-00934-3",
       },
       {
-        "name": "Generative Models of Cell Dynamics: From Neural ODEs to Flow Matching",
-        "summary": "Primer on modeling single-cell dynamics with neural differential equations.",
-      },
-      {
-        "name": "SpatialSSL: Whole-Brain Spatial Transcriptomics in the Mouse Brain with Self-Supervised Learning",
-        "summary": "Improve cell type prediction performance on a large-scale spatial transcriptomics dataset with self-supervised learning.",
+        "name": "SpatialSSL: Whole-Brain Spatial Transcriptomics in the Mouse Brain with SSL",
+        "summary": "Self-supervised learning for cell type prediction on large-scale spatial transcriptomics. NeurIPS AI for Science Workshop, 2023.",
         "url": "https://openreview.net/pdf?id=bfD3Fzy7Mb",
       },
       {
-        "name": "Heterogeneity-driven phenotypic plasticity and treatment response in branched-organoid models of pancreatic ductal adenocarcinoma",
-        "summary": "Contributed single-cell RNA-sequencing data analysis to a collaborative project with clinical partners.",
+        "name": "Heterogeneity-driven phenotypic plasticity and treatment response in PDAC branched-organoid models",
+        "summary": "Contributed single-cell RNA-sequencing data analysis to a clinical collaboration. Nature Biomedical Engineering, 2024.",
         "url": "https://www.nature.com/articles/s41551-024-01273-9",
       },
       {
         "name": "Sparsity in Continuous-Depth Neural Networks",
-        "summary": "Improve explainability in Neural ODEs for single-cell RNA-sequencing data through novel regularization scheme.",
+        "summary": "Improves explainability in Neural ODEs for single-cell data through a sparsity-inducing regularizer (PathReg). NeurIPS, 2022.",
         "url": "https://arxiv.org/abs/2210.14672",
       },
     ],

@@ -3,8 +3,11 @@ github_users:
 
 repo_description_lines_max: 2
 
+# Featured code repositories that accompany my publications. Grouped roughly
+# from most recent work back to earlier projects.
 github_repos:
-  - theislab/ssl_in_scg
-  - theislab/sc_mae
-  - theislab/CFGen
-  - theislab/pdac_analysis
+  - microsoft/cell_synergy        # Beyond alignment: synergistic integration (SIS), bioRxiv 2026
+  - theislab/CellHermes           # Language may be all omics needs: CellHermes, bioRxiv 2025
+  - theislab/CFGen                # CFGen: Generating multi-modal single-cell counts, ICLR 2025
+  - theislab/ssl_in_scg           # Delineating effective use of SSL in single-cell genomics, Nature MI 2024
+  - theislab/pdac_analysis        # Single-cell PDAC analysis, Nature Biomedical Engineering 2024
