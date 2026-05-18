@@ -9,9 +9,9 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-repositories",
-          title: "repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+  },{id: "nav-code",
+          title: "code",
+          description: "A curated set of open-source projects associated with my research on self-supervised learning, multimodal foundation models, and generative dynamics for single-cell omics.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Teaching activities at Technical University of Munich (TUM)",
+          description: "Teaching, mentoring, and student supervision at the Technical University of Munich (TUM).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -72,7 +72,7 @@ ninja.data = [{
           section: "News",},{id: "news-page-facing-up-cfgen-generating-multi-modal-and-multi-attribute-single-cell-counts-has-been-accepted-at-iclr-2025-link",
           title: ':page_facing_up: CFGen: Generating Multi-Modal and Multi-Attribute Single-Cell Counts has been accepted at ICLR...',
           description: "",
-          section: "News",},{id: "news-globe-with-meridians-the-learning-meaningful-representations-of-life-lmrl-workshop-i-co-organized-at-iclr-2025-in-singapore-was-a-great-success-the-workshop-brought-together-researchers-working-on-foundation-models-for-biological-data-multimodal-representation-learning-and-multiscale-biological-representations-featuring-exciting-keynotes-from-leaders-in-the-field-and-stimulating-discussions-about-the-future-of-ai-in-biology-s",
+          section: "News",},{id: "news-globe-with-meridians-the-learning-meaningful-representations-of-life-lmrl-workshop-i-co-organized-at-iclr-2025-in-singapore-was-a-great-success-the-workshop-brought-together-researchers-working-on-foundation-models-for-biological-data-multimodal-representation-learning-and-multiscale-biological-representations-featuring-exciting-keynotes-from-leaders-in-the-field-and-stimulating-discussions-about-the-future-of-ai-in-biology",
           title: ':globe_with_meridians: The Learning Meaningful Representations of Life (LMRL) Workshop I co-organized at ICLR...',
           description: "",
           section: "News",},{id: "news-page-facing-up-our-paper-interpretable-self-supervised-prototype-learning-for-single-cell-transcriptomics-was-presented-at-the-lmrl-workshop-at-iclr-2025-the-work-introduces-scproto-a-novel-method-that-learns-interpretable-prototypes-for-denoising-single-cell-data-while-preserving-biological-structure-and-removing-batch-effects-link",
@@ -80,6 +80,27 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-rocket-today-marks-the-beginning-of-my-research-internship-at-microsoft-research-in-cambridge-ma-i-m-excited-to-work-with-lorin-crawford-and-the-team-on-cutting-edge-research-projects",
           title: ':rocket: Today marks the beginning of my research internship at Microsoft Research in...',
+          description: "",
+          section: "News",},{id: "news-rocket-my-research-internship-at-microsoft-research-in-cambridge-ma-with-lorin-crawford-and-the-ai-for-biomedicine-team-has-come-to-an-end-a-huge-thank-you-to-the-team-for-an-amazing-summer-working-on-synergistic-multimodal-foundation-models-for-cell-biology",
+          title: ':rocket: My research internship at Microsoft Research in Cambridge, MA, with Lorin Crawford...',
+          description: "",
+          section: "News",},{id: "news-page-facing-up-new-preprint-language-may-be-all-omics-needs-harmonizing-multimodal-data-for-omics-understanding-with-cellhermes-our-self-supervised-llm-based-framework-that-unifies-multimodal-omics-through-natural-language-congrats-to-yicheng-for-leading-this-work-link",
+          title: ':page_facing_up: New preprint: Language may be all omics needs: Harmonizing multimodal data for...',
+          description: "",
+          section: "News",},{id: "news-globe-with-meridians-excited-that-the-learning-meaningful-representations-of-life-lmrl-workshop-i-co-organize-has-been-accepted-at-iclr-2026-in-rio-de-janeiro-brazil-looking-forward-to-another-edition-of-the-workshop-on-representation-learning-for-biology-link",
+          title: ':globe_with_meridians: Excited that the Learning Meaningful Representations of Life (LMRL) Workshop I co-organize...',
+          description: "",
+          section: "News",},{id: "news-page-facing-up-our-perspective-from-modality-specific-to-compositional-foundation-models-for-cell-biology-is-out-in-cell-systems-we-argue-for-compositional-foundation-models-cfms-that-fuse-pre-trained-unimodal-experts-as-a-scalable-path-toward-virtual-cell-models-link",
+          title: ':page_facing_up: Our perspective From modality-specific to compositional foundation models for cell biology is...',
+          description: "",
+          section: "News",},{id: "news-page-facing-up-our-review-generative-models-of-cell-dynamics-from-neural-odes-to-flow-matching-is-published-in-communications-biology-a-unified-perspective-on-continuous-time-generative-models-for-single-cell-trajectories-link",
+          title: ':page_facing_up: Our review Generative models of cell dynamics: from Neural ODEs to flow...',
+          description: "",
+          section: "News",},{id: "news-page-facing-up-new-preprint-from-my-microsoft-research-internship-beyond-alignment-synergistic-integration-is-required-for-multimodal-cell-foundation-models-we-introduce-the-synergistic-information-score-sis-and-show-that-alignment-based-fusion-collapses-to-linear-redundancy-motivating-synergy-aware-integration-objectives-link",
+          title: ':page_facing_up: New preprint from my Microsoft Research internship: Beyond alignment: synergistic integration is...',
+          description: "",
+          section: "News",},{id: "news-globe-with-meridians-the-learning-meaningful-representations-of-life-lmrl-workshop-at-iclr-2026-in-rio-de-janeiro-was-a-fantastic-day-thank-you-to-all-speakers-panelists-authors-and-attendees-for-the-discussions-on-world-models-foundation-models-and-synergistic-multimodal-representations-of-biology-link",
+          title: ':globe_with_meridians: The Learning Meaningful Representations of Life (LMRL) Workshop at ICLR 2026 in...',
           description: "",
           section: "News",},{
         id: 'social-email',
