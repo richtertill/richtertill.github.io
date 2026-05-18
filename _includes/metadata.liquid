@@ -35,7 +35,8 @@
       {{ page.title }} | {{ title }}
     {% endif %}
   {% else %}
-    {{ title }}{% if site.job_title %} | {{ site.job_title }}{% endif %}
+    {{ title -}}
+    {%- if site.job_title %} | {{ site.job_title }}{% endif %}
   {% endif %}
 </title>
 <meta name="author" content="{{ author_name }}">

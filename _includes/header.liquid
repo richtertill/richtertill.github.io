@@ -29,7 +29,11 @@
           {% endif %}
         </a>
       {% else %}
-        <a class="navbar-brand title font-weight-lighter d-flex align-items-center" href="{{ site.baseurl }}/" aria-label="{{ site.first_name }} {{ site.last_name }}">
+        <a
+          class="navbar-brand title font-weight-lighter d-flex align-items-center"
+          href="{{ site.baseurl }}/"
+          aria-label="{{ site.first_name }} {{ site.last_name }}"
+        >
           {% if site.icon and site.icon != 'blank' and site.icon.size > 4 %}
             <img
               src="{{ site.icon | prepend: '/assets/img/' | relative_url }}"

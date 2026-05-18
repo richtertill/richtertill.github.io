@@ -19,7 +19,7 @@
 {% assign parts = repo_path | split: '/' %}
 {% assign owner = parts[0] %}
 {% assign name = parts[1] %}
-{% if repo_title == nil or repo_title == '' %}
+{% if repo_title == null or repo_title == '' %}
   {% assign repo_title = name %}
 {% endif %}
 
