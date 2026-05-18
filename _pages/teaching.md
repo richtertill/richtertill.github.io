@@ -7,7 +7,7 @@ nav: true
 nav_order: 6
 ---
 
-I teach, mentor, and supervise students at TUM and Helmholtz Munich, mostly around machine learning, deep learning, and computational biology. Most of my graduate teaching takes place in the [Department of Computer Science](https://www.cit.tum.de/en/cit/home/) and is supervised through the [Theis Lab](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab).
+I teach, mentor, and supervise students at TUM and Helmholtz Munich, mostly around machine learning, deep learning, and computational biology. Most of my graduate teaching takes place at the [TUM School of Computation, Information and Technology (CIT)](https://www.cit.tum.de/) and is supervised through the [Theis Lab](https://www.helmholtz-munich.de/en/icb/research-groups/theis-lab).
 
 ### Graduate Level
 

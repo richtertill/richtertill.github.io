@@ -1,47 +1,51 @@
-{% assign repo_url = include.repository | split: '/' %}
-{% if site.data.repositories.github_users contains repo_url.first %}
-  {% assign show_owner = false %}
+{% comment %}
+  Static repo card. Replaces github-readme-stats placeholders which often 503
+  / rate-limit. Accepts either:
+    - a plain string "owner/repo" (legacy entries), or
+    - an object with keys: repo, title, description, paper, tags.
+{% endcomment %}
+
+{% assign r = include.repository %}
+{% if r.repo %}
+  {% assign repo_path = r.repo %}
+  {% assign repo_title = r.title %}
+  {% assign repo_desc = r.description %}
+  {% assign repo_paper = r.paper %}
+  {% assign repo_tags = r.tags %}
 {% else %}
-  {% assign show_owner = true %}
+  {% assign repo_path = r %}
 {% endif %}
 
-{% assign lang = site.lang | split: '-' | first %}
-
-{% case lang %}
-  {% when 'pt' %}
-    {% assign lang = site.lang %}
-
-  {% when 'zh' %}
-    {% assign lang_last = site.lang | split: '-' | last %}
-    {% case lang_last %}
-      {% when 'cn', 'sg', 'my', 'hans' %}
-        {% assign lang = 'cn' %}
-      {% when 'tw', 'hk', 'mo', 'hant' %}
-        {% assign lang = 'zh-tw' %}
-    {% endcase %}
-
-    {% comment %} Add a new language using when... if needed {% endcomment %}
-    {% comment %} If you still encounter language-display issues, check the available locale codes in github-readme-stats (different from ISO-639 standard used in your website) {% endcomment %}
-    {% comment %} https://github.com/anuraghazra/github-readme-stats?tab=readme-ov-file#available-locales {% endcomment %}
-{% endcase %}
-
-{% if site.data.repositories.repo_description_lines_max %}
-  {% assign max_lines = site.data.repositories.repo_description_lines_max %}
-{% else %}
-  {% assign max_lines = 2 %}
+{% assign parts = repo_path | split: '/' %}
+{% assign owner = parts[0] %}
+{% assign name = parts[1] %}
+{% if repo_title == nil or repo_title == '' %}
+  {% assign repo_title = name %}
 {% endif %}
 
-<div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
-    <img
-      class="only-light w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
-    <img
-      class="only-dark w-100"
-      alt="{{ include.repository }}"
-      src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
-    >
+<div class="repo-card p-3">
+  <a class="repo-card-link" href="https://github.com/{{ repo_path }}" target="_blank" rel="noopener">
+    <div class="repo-card-header">
+      <i class="fa-brands fa-github repo-card-icon" aria-hidden="true"></i>
+      <div class="repo-card-titles">
+        <div class="repo-card-owner">{{ owner }}</div>
+        <div class="repo-card-name">{{ repo_title }}</div>
+      </div>
+    </div>
+    {% if repo_desc %}
+      <p class="repo-card-desc">{{ repo_desc }}</p>
+    {% endif %}
+    <div class="repo-card-meta">
+      {% if repo_paper %}
+        <span class="repo-card-paper">{{ repo_paper }}</span>
+      {% endif %}
+      {% if repo_tags %}
+        <span class="repo-card-tags">
+          {% for tag in repo_tags %}
+            <span class="repo-card-tag">{{ tag }}</span>
+          {% endfor %}
+        </span>
+      {% endif %}
+    </div>
   </a>
 </div>

@@ -1,13 +1,35 @@
 github_users:
   - richtertill
 
-repo_description_lines_max: 2
-
-# Featured code repositories that accompany my publications. Grouped roughly
-# from most recent work back to earlier projects.
+# Featured code repositories that accompany my publications.
+# Each entry renders as a card on /repositories/ — no external image API.
 github_repos:
-  - microsoft/cell_synergy        # Beyond alignment: synergistic integration (SIS), bioRxiv 2026
-  - theislab/CellHermes           # Language may be all omics needs: CellHermes, bioRxiv 2025
-  - theislab/CFGen                # CFGen: Generating multi-modal single-cell counts, ICLR 2025
-  - theislab/ssl_in_scg           # Delineating effective use of SSL in single-cell genomics, Nature MI 2024
-  - theislab/pdac_analysis        # Single-cell PDAC analysis, Nature Biomedical Engineering 2024
+  - repo: microsoft/cell_synergy
+    title: cell_synergy
+    description: "Synergistic Information Score (SIS) and benchmark of fusion methods for multimodal cell foundation models."
+    paper: "Beyond alignment, bioRxiv 2026"
+    tags: [Python, PyTorch, Multimodal]
+
+  - repo: theislab/CellHermes
+    title: CellHermes
+    description: "Biological language model that unifies multimodal omics tasks into natural-language question-answer pairs."
+    paper: "CellHermes, bioRxiv 2025"
+    tags: [Python, LLM, LoRA]
+
+  - repo: theislab/CFGen
+    title: CFGen
+    description: "Flow-matching generative model for multi-modal, multi-attribute single-cell counts."
+    paper: "ICLR 2025"
+    tags: [Python, Flow Matching, scRNA-seq]
+
+  - repo: theislab/ssl_in_scg
+    title: ssl_in_scg
+    description: "Systematic study of self-supervised learning in single-cell genomics; masked-prediction transfers best."
+    paper: "Nature Machine Intelligence 2024"
+    tags: [Python, PyTorch, SSL]
+
+  - repo: theislab/pdac_analysis
+    title: pdac_analysis
+    description: "Single-cell analysis of PDAC branched-organoid models, heterogeneity, and treatment response."
+    paper: "Nature Biomedical Engineering 2024"
+    tags: [Python, scRNA-seq, PDAC]

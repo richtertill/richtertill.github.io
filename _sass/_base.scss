@@ -555,6 +555,110 @@ footer.sticky-bottom {
   }
 }
 
+// Self-hosted repo cards (replace github-readme-stats placeholders)
+.repo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .repo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.repo-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background-color: var(--global-card-bg-color, var(--global-bg-color));
+  transition:
+    transform 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: var(--global-theme-color);
+  }
+}
+
+.repo-card-link,
+.repo-card-link:hover {
+  color: var(--global-text-color);
+  text-decoration: none;
+  display: block;
+}
+
+.repo-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.repo-card-icon {
+  font-size: 1.6rem;
+  color: var(--global-text-color);
+  flex-shrink: 0;
+}
+
+.repo-card-titles {
+  line-height: 1.2;
+  min-width: 0;
+}
+
+.repo-card-owner {
+  font-size: 0.8rem;
+  color: var(--global-text-color-light);
+  text-transform: lowercase;
+}
+
+.repo-card-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  overflow-wrap: anywhere;
+}
+
+.repo-card-desc {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.92rem;
+  color: var(--global-text-color);
+  line-height: 1.4;
+}
+
+.repo-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+
+.repo-card-paper {
+  font-style: italic;
+}
+
+.repo-card-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.repo-card-tag {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background-color: var(--global-divider-color);
+  color: var(--global-text-color);
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
 // Blog
 
 .header-bar {
